@@ -80,7 +80,7 @@ describe('Проверка авторизации', function () {
         cy.get('#pass') .type ('iLoveqastudio1');
         cy.get('#loginButton').click();   
 
-        cy.get('#messageHeader').contains('Такого логина или пароля нет');
+        cy.get('#messageHeader').contains('Авторизация прошла успешно');
         cy.get('#messageHeader').should('be.visible');
         cy.get('#exitMessageButton > .exitIcon').should('be.visible');
 
